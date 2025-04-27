@@ -8,6 +8,8 @@ from app import utils, db
 
 app = FastAPI(title="Secure DH & IBE Demo Backend")
 
+print("Contributor check: hello")
+
 # Replace these with your actual frontend URLs
 origins = [
     "*"
