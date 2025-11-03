@@ -7,11 +7,11 @@ def create_connection():
     conn.execute("PRAGMA foreign_keys=1")
     return conn
 #     db_url = os.getenv("DATABASE_URL", "sqlite:///./database.db")
-#    # If it’s a sqlite:/// URL, strip the prefix for connect()
+#    - If it’s a sqlite:/// URL, strip the prefix for connect()
 #     if db_url.startswith("sqlite:///"):
 #         path = db_url.replace("sqlite:///", "")
 #         return sqlite3.connect(path, detect_types=sqlite3.PARSE_DECLTYPES)
-#    # Otherwise, pass it as a URI
+#    - Otherwise, pass it as a URI
 #     return sqlite3.connect(db_url, uri=True, detect_types=sqlite3.PARSE_DECLTYPES)
 
 def create_tables(conn):
